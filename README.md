@@ -74,6 +74,8 @@ Da es sich um eine moderne Web-App handelt, empfehle ich React mit TypeScript. W
         👉 Helsinki City Design System
         Farben, UI-Elemente und Komponenten können direkt übernommen werden
 
+        https://hds.hel.fi/
+
 ## 5. Zukunft: 3D Modell des Spielplatzes
 
     Three.js für Web-3D-Modelle
