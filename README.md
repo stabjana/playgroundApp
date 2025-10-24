@@ -5,20 +5,14 @@
 I would like to create a playground app that lists playgrounds in helsinki. You can view them on a map or in a list.
 All features on the playground should be listed.
 Future enhancements: a 3D model of the playground.
-It should be possible to upload images. 
+It should be possible to upload images.
 Users should be able to move around without logging in and view the playgrounds at their leisure.
-Users should be able to submit ratings 
+Users should be able to submit ratings
 there should be an age rating for the respective play equipment or the entire playground
 seating, sun protection and rain protection should also be included.
 the playgrounds should be integrated into a database
 the design should/can correspond to that of the city of helsinke so that they can easily implement it in their own pages later.
 is the design publicly available?
-
-i'm not quite sure whether i should do it in react and in typescript or javascript?
-which technology is best suited?
-frameworks,
-database,
-language?
 
 ## 1. Wahl der Technologie
 
@@ -30,27 +24,31 @@ Da es sich um eine moderne Web-App handelt, empfehle ich React mit TypeScript. W
     Gute Performance für Karten & interaktive Elemente
     Leicht mit bestehenden Stadt-Webseiten zu integrieren
 
-✅ TypeScript statt JavaScript:
+✅ TypeScript:
 
     Statische Typisierung → weniger Fehler
     Bessere Wartbarkeit, besonders für große Projekte
 
 ## 2. Frameworks & Bibliotheken
 
-    Next.js (für React):
-        SEO-Optimierung, damit die Spielplätze gut über Google gefunden werden
-        Bessere Performance durch serverseitiges Rendern
-    Leaflet.js oder Mapbox:
-        Leaflet ist Open Source & leichtgewichtig
-        Mapbox erlaubt schöne Karten & 3D-Integration für später
-    TailwindCSS oder Chakra UI für ein modernes UI
+    React mit TailwindCSS für ein modernes UI
+    Nest.js
+    Supabase und PostGis
 
 ## 3. Datenbank & Backend
 
-    PostgreSQL mit PostGIS
-        Perfekt für Standort-Daten & Geodaten
-    Node.js mit Express als Backend
-        Oder Supabase (wenn du Backend-as-a-Service möchtest)
+sollte können:
+
+- API-Endpunkte bereitstellen (z. B. /api/playgrounds, /api/reviews)
+- Authentifizierung (User / Token-Handling)
+- Validierung & Autorisierung (z. B. „nur Ersteller darf löschen“)
+- Bilder-Upload & Storage
+- Kommunikation mit PostgreSQL
+- Geodaten-Abfragen (PostGIS)
+
+  PostgreSQL mit PostGIS
+  Perfekt für Standort-Daten & Geodaten
+  NestJS + Prisma + Supabase (PostgreSQL)
 
 ## 4. Features & Umsetzung
 

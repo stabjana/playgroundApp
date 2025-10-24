@@ -1,0 +1,45 @@
+# --- Node.js ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.env
+.env.local
+.env.*.local
+
+# --- Build output ---
+dist/
+build/
+coverage/
+tmp/
+*.tsbuildinfo
+
+# --- Prisma ---
+prisma/generated/
+prisma/migrations/
+# optional: migrations können gebackupt werden, falls du sie versionieren willst
+# => kommentiere die obige Zeile aus, wenn du sie mit versionieren möchtest
+# prisma/migrations/
+
+# --- OS / Editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# --- Logs ---
+logs/
+*.log
+*.log.*
+
+
+# Swap files
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
