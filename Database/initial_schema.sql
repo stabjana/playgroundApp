@@ -1,6 +1,10 @@
 -- WARNING: This schema is for context only and is not meant to be run.
 -- Table order and constraints may not be valid for execution.
 
+-- Enable required extensions (ignore errors if already installed)
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+CREATE EXTENSION IF NOT EXISTS "postgis";
+
 CREATE TABLE public.favourites (
   id uuid NOT NULL DEFAULT uuid_generate_v4(),
   playground_id uuid NOT NULL,
