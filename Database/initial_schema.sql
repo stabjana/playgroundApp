@@ -39,7 +39,7 @@ CREATE TABLE public.playground_addresses (
   postal_code text,
   latitude double precision,
   longitude double precision,
-  geom USER-DEFINED,
+  geom geometry,
   created_at timestamp with time zone DEFAULT now(),
   CONSTRAINT playground_addresses_pkey PRIMARY KEY (id),
   CONSTRAINT playground_addresses_playground_id_fkey FOREIGN KEY (playground_id) REFERENCES public.playgrounds(id)
