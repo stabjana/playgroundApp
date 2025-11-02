@@ -233,7 +233,7 @@ For Supabase (remote DB), replace DATABASE_URL with your project’s URL:
 DATABASE_URL="postgresql://postgres:<YOUR_PASSWORD>@db.<PROJECT>.supabase.co:5432/postgres"
 ```
 
-2. Docker & Services Overview
+## 2. Docker & Services Overview
 
 The project runs in two containers:
 
@@ -268,7 +268,7 @@ services:
     command: npm run start:dev
 ```
 
-3. Prisma ORM
+## 3. Prisma ORM
 
 Prisma is used to manage database schema, migrations, and type-safe database access.
 
@@ -335,7 +335,7 @@ npm run start:dev
 npx prisma db pull
 ```
 
-5. Development Workflow
+## 4. Development Workflow
 
 | Step                      | Command                                         | Description               |
 | ------------------------- | ----------------------------------------------- | ------------------------- |
@@ -344,7 +344,7 @@ npx prisma db pull
 | 3️⃣ Open DB UI             | `npx prisma studio`                             | Inspect data              |
 | 4️⃣ Stop environment       | `docker compose down`                           | Clean stop                |
 
-6. Folder Structure
+## 5. Folder Structure
 
 ```kotlin
 playgroundApp/
@@ -362,7 +362,7 @@ playgroundApp/
 └── postgres-data/
 ```
 
-7. Tech stack summary
+## 6. Tech stack summary
 
 | Layer                | Tool           | Purpose                    |
 | -------------------- | -------------- | -------------------------- |
@@ -372,7 +372,7 @@ playgroundApp/
 | **Containerization** | Docker Compose | Unified dev setup          |
 | **Hosting Option**   | Supabase       | Managed PostgreSQL         |
 
-8. Architecture Overview
+## 7. Architecture Overview
 
 ```diff
 +---------------------------+
@@ -389,3 +389,19 @@ playgroundApp/
 | or Supabase Remote DB |
 +---------------------------+
 ```
+
+## 8. Troubleshoot
+
+If problems occur with prisma pull then modify the pschema.prisma to allow the importing schema structure (here public and auth) and create a local docker container for the database first before you try to pull the db.
+For me it worked from that way and my prisma pull was finally successful and the client for Database queries was created.
+
+```bash
+npx prisma db pull
+npx prisma generate
+```
+
+one more thing to remember:
+| Warning | Meaning | Relevance |
+| ---------------------- | ------------------------------------------------------ | ----------------------------------------------------- |
+| `geometry` Field (geom) | Prisma client can't map GIS-Koordinates directly | use Raw SQL / PostGIS-Views instead |
+| `CHECK constraints` | Prisma ignores Check-Validations (eg. Rating 1–5) | DB handles it anyway |
