@@ -43,3 +43,10 @@ logs/
 [._]ss[a-gi-z]
 [._]sw[a-p]
 
+/node_modules
+/.env
+/.env.local
+/build
+/dist
+.DS_Store
+.prettierrc

@@ -1,17 +1,18 @@
 import { Body, Controller, Post } from "@nestjs/common";
 import { AuthService } from "./auth.service";
+import { AuthDto } from "./dto";
 
 @Controller("auth")
 export class AuthController {
   constructor(private authService: AuthService) {}
 
   @Post("signup")
-  signUp(@Body() dto: any) {
+  signUp(@Body() dto: AuthDto) {
     console.log({ dto });
-    // signUp(@Req() req: Request) {
-    // console.log(req.body); // req not needed for nest
     return this.authService.signUp();
   }
+  // instead of if (!email) throw error we can use class transformer and class-validator library
+  // pipe in nest js - functions that transform data
 
   @Post("signin")
   signIn() {
