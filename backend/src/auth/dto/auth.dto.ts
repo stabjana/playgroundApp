@@ -5,6 +5,7 @@ import {
 } from 'class-validator';
 
 export class AuthDto {
+  // validation pipe here:
   @IsEmail()
   @IsNotEmpty()
   email: string;
