@@ -9,7 +9,7 @@ export class AuthController {
   @Post('signup')
   // pipe in nest js - functions that transform data
   signUp(@Body() dto: AuthDto) {
-    return this.authService.signUp();
+    return this.authService.signUp(dto);
   }
   // instead of if (!email) throw error we can use class transformer and class-validator library
 
