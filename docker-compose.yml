@@ -13,6 +13,9 @@ services:
 
   backend:
     build: ./backend
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
     restart: always
     depends_on:
       - db
