@@ -17,10 +17,7 @@ tmp/
 *.tsbuildinfo
 
 # --- Prisma ---
-prisma/generated/
-prisma/migrations/
-# optional: migrations können gebackupt werden, falls du sie versionieren willst
-# => kommentiere die obige Zeile aus, wenn du sie mit versionieren möchtest
+# prisma/generated/
 # prisma/migrations/
 
 # --- OS / Editor ---
