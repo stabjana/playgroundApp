@@ -1,0 +1,16 @@
+name: Deploy migrations
+on:
+  push:
+    branches: [develop]
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2 # or setup Node
+      - run: npm ci
+      - run: npx prisma migrate deploy
+        env:
+          DATABASE_URL: ${{ secrets.SUPABASE_DATABASE_URL }}
+# runs all pending migrations on the Supabase database with prisma
