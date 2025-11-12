@@ -6,15 +6,10 @@ import { AuthDto } from './dto';
 export class AuthController {
   constructor(private authService: AuthService) {}
 
-  @Post('signup')
+  @Post('signin')
   // pipe in nest js - functions that transform data
-  signUp(@Body() dto: AuthDto) {
-    return this.authService.signUp(dto);
+  signIn(@Body() dto: AuthDto) {
+    return this.authService.signIn(dto);
   }
   // instead of if (!email) throw error we can use class transformer and class-validator library
-
-  @Post('signin')
-  signIn() {
-    return this.authService.signIn();
-  }
 }
