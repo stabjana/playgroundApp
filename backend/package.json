@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "main": "dist/src/main",
   "scripts": {
-    "prestart": "npx prisma generate",
-    "prestart:dev": "npx prisma generate",
     "build": "nest build",
     "start": "nest start",
     "start:dev": "nest start --watch",
@@ -18,18 +16,14 @@
     "@nestjs/common": "^11.1.7",
     "@nestjs/core": "^11.1.7",
     "@nestjs/platform-express": "^11.1.7",
-    "@prisma/client": "^6.18.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.2",
-    "dotenv": "^17.2.3",
     "reflect-metadata": "^0.2.2"
   },
   "devDependencies": {
     "@nestjs/cli": "^11.0.10",
     "@nestjs/schematics": "^11.0.9",
     "@types/node": "^24.9.1",
-    "prisma": "^6.18.0",
-    "supabase": "^2.53.6",
     "typescript": "^5.9.3"
   }
 }
