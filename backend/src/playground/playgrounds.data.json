@@ -1,0 +1,213 @@
+[
+  {
+    "id": "1f4e7f9c-21da-4b20-9f77-3ed4c1cbe001",
+    "name": "Kletterwald am See",
+    "description": "Großer Spielplatz direkt am Wasser mit viel Schatten und Kletterturm.",
+    "manufacturer_age_min": 3,
+    "manufacturer_age_max": 12,
+    "avg_rating": 4.6,
+    "address": {
+      "street": "Seepromenade 12",
+      "city": "Hamburg",
+      "postal_code": "20095",
+      "latitude": 53.5511,
+      "longitude": 9.9937
+    },
+    "features": [
+      {
+        "id": "f-slide",
+        "name": "Rutsche",
+        "icon": "slide"
+      },
+      {
+        "id": "f-sand",
+        "name": "Sandkasten",
+        "icon": "sandbox"
+      },
+      {
+        "id": "f-water",
+        "name": "Wasserspiele",
+        "icon": "water"
+      }
+    ],
+    "images": [
+      {
+        "id": "img-001",
+        "image_url": "https://www.bonn.de/pressemitteilungen/juli/spielplatz-an-der-heilsbachstrasse-in-hardtberg-erneuert.php.media/288806/Spielplatz-Heilsbachweg-Bild2.jpg.scaled/db24a4fbdef552bcc7055092eff28bd5.jpg",
+        "user_profile_id": null
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-001",
+        "rating": 5,
+        "comment": "Viel Platz, sauber und tolle Aussicht.",
+        "age_min": 3,
+        "age_max": 10,
+        "user_profile_id": "user-1"
+      }
+    ]
+  },
+  {
+    "id": "2d22d750-0d97-4f38-8dfd-317c56c8fa02",
+    "name": "Stadtinsel",
+    "description": "Kompakter Quartiers-Spielplatz mit viel Grün und Sitzgelegenheiten.",
+    "manufacturer_age_min": 1,
+    "manufacturer_age_max": 8,
+    "avg_rating": 4.2,
+    "address": {
+      "street": "Inselweg 5",
+      "city": "Berlin",
+      "postal_code": "10115",
+      "latitude": 52.5208,
+      "longitude": 13.4095
+    },
+    "features": [
+      {
+        "id": "f-swing",
+        "name": "Schaukel",
+        "icon": "swing"
+      },
+      {
+        "id": "f-baby",
+        "name": "Kleinkind-Bereich",
+        "icon": "toddler"
+      }
+    ],
+    "images": [
+      {
+        "id": "img-002",
+        "image_url": "https://www.bonn.de/themen-entdecken/familie-partnerschaft/spielplaetze.php.media/308467/Spielplatz_Honnefer_Strasse_Lannesdorf_Bild4.jpg.scaled/f72b0f9e116d04681ca6f79ca8fa605f.jpg",
+        "user_profile_id": null
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "id": "3f6740a8-4f6f-4df3-8d09-3b6beadd5a03",
+    "name": "Abenteuerhügel",
+    "description": "Holz-Festung, Seilbrücke und kleine Rodelpiste im Winter.",
+    "manufacturer_age_min": 5,
+    "manufacturer_age_max": 14,
+    "avg_rating": 4.8,
+    "address": {
+      "street": "Hügelweg 9",
+      "city": "München",
+      "postal_code": "80331",
+      "latitude": 48.1351,
+      "longitude": 11.582
+    },
+    "features": [
+      {
+        "id": "f-zip",
+        "name": "Seilbahn",
+        "icon": "zipline"
+      },
+      {
+        "id": "f-climb",
+        "name": "Kletterwand",
+        "icon": "climbing"
+      },
+      {
+        "id": "f-rodel",
+        "name": "Rodelhügel",
+        "icon": "sled"
+      }
+    ],
+    "images": [
+      {
+        "id": "img-003",
+        "image_url": "https://nachhaltig.osnabrueck.de/fileadmin/_processed_/6/6/csm_KSP_von-Scheffel-Strasse_Sandspielbereich_OSB_SoerenHuslage.jpg.msg_7c32f190e1.jpg",
+        "user_profile_id": "user-2"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-002",
+        "rating": 4,
+        "comment": "An Wochenenden voll, sonst top.",
+        "age_min": 6,
+        "age_max": 12,
+        "user_profile_id": "user-3"
+      }
+    ]
+  },
+  {
+    "id": "4cf82f8d-0d8b-4b6d-9ef8-4a1ef79b1a04",
+    "name": "Nachbarschaftspark",
+    "description": "Offener Park mit viel Wiese, Picknicktischen und einfacher Ausstattung.",
+    "manufacturer_age_min": 2,
+    "manufacturer_age_max": 10,
+    "avg_rating": 3.9,
+    "address": {
+      "street": "Parkallee 21",
+      "city": "Köln",
+      "postal_code": "50667",
+      "latitude": 50.9375,
+      "longitude": 6.9603
+    },
+    "features": [
+      {
+        "id": "f-bench",
+        "name": "Sitzbänke",
+        "icon": "bench"
+      },
+      {
+        "id": "f-open",
+        "name": "Freifläche",
+        "icon": "field"
+      }
+    ],
+    "images": [],
+    "reviews": []
+  },
+  {
+    "id": "5b4a7ce6-56b1-4f5a-9d6c-507e9c88b205",
+    "name": "Waldlichtung",
+    "description": "Naturnaher Platz im Wald mit Balancierpfad und Holzfiguren.",
+    "manufacturer_age_min": 4,
+    "manufacturer_age_max": 12,
+    "avg_rating": 4.4,
+    "address": {
+      "street": "Forstweg 3",
+      "city": "Leipzig",
+      "postal_code": "04109",
+      "latitude": 51.3397,
+      "longitude": 12.3731
+    },
+    "features": [
+      {
+        "id": "f-balance",
+        "name": "Balancierpfad",
+        "icon": "balance"
+      },
+      {
+        "id": "f-shade",
+        "name": "Schattenplätze",
+        "icon": "shade"
+      },
+      {
+        "id": "f-nature",
+        "name": "Naturmaterial",
+        "icon": "leaf"
+      }
+    ],
+    "images": [
+      {
+        "id": "img-004",
+        "image_url": "https://images.pexels.com/photos/133458/pexels-photo-133458.jpeg",
+        "user_profile_id": null
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-003",
+        "rating": 5,
+        "comment": "Sehr ruhig und sicher, viel Schatten.",
+        "age_min": 4,
+        "age_max": 9,
+        "user_profile_id": "user-4"
+      }
+    ]
+  }
+]
