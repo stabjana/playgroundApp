@@ -50,18 +50,20 @@ export class PlaygroundService {
 
   constructor() {
     const filePath = join(
-      __dirname,
+      process.cwd(),
+      'src',
+      'playground',
       'playgrounds.data.json',
     );
     const raw = readFileSync(filePath, 'utf8');
     this.playgrounds = JSON.parse(raw) as Playground[];
   }
 
-  findAll(): Playground[] {
+  getAll(): Playground[] {
     return this.playgrounds;
   }
 
-  findOne(id: string): Playground | undefined {
+  getOne(id: string): Playground | undefined {
     return this.playgrounds.find((p) => p.id === id);
   }
 }

@@ -14,13 +14,13 @@ export class PlaygroundController {
   ) {}
 
   @Get()
-  findAll(): Playground[] {
-    return this.playgroundService.findAll();
+  getAll(): Playground[] {
+    return this.playgroundService.getAll();
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string): Playground {
-    const playground = this.playgroundService.findOne(id);
+  getOne(@Param('id') id: string): Playground {
+    const playground = this.playgroundService.getOne(id);
     if (!playground) {
       throw new NotFoundException(
         `Playground with id ${id} not found`,
