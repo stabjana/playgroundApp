@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -13,4 +13,152 @@ colors {
   color: #3f7c85;
   color: #f6b89e;
   color: #a7c7e7;
+}
+
+.app {
+  background-color: #02252b;
+  color: #d8d2c8;
+  font-family: sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: #02252b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  border-bottom: 1px solid #3f7c85;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #f4e38e;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #d8d2c8;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #9caf9b;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  background: #a7c7e7;
+  border-radius: 50%;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  width: 100%;
+  background: url("assets/richard-burlton-imW9hcDjr7s-unsplash.jpg")
+    center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 37, 43, 0.75);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: #f4e38e;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #d8d2c8;
+}
+
+.primary-btn {
+  margin-top: 30px;
+  padding: 14px 36px;
+  background: #f6b89e;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: #9caf9b;
+}
+
+/* SECTION */
+.section {
+  padding: 100px 80px;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.tile {
+  background: #03323a;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.tile:hover {
+  background: #3f7c85;
+  transform: translateY(-5px);
+}
+
+.image-placeholder {
+  height: 180px;
+  background: #9caf9b;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* FOOTER */
+.footer {
+  padding: 60px;
+  text-align: center;
+  background: #031e23;
 }
