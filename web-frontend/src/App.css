@@ -3,6 +3,14 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: #1f3477;
-  color: #ffc400;
+  background-color: #02252b;
+  color: #d8d2c8;
+}
+
+colors {
+  color: #9caf9b;
+  color: #f4e38e;
+  color: #3f7c85;
+  color: #f6b89e;
+  color: #a7c7e7;
 }

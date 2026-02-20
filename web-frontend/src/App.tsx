@@ -1,12 +1,12 @@
 import './App.css'
+import LandingPage from './pages/LandingPage'
 
 function App() {
 
   return (
     <>
-      <div>
-        <h1>Hello, This will be the playground app! ⭐🎈 </h1>
-      </div>
+      <LandingPage />
+     
     </>
   )
 }
