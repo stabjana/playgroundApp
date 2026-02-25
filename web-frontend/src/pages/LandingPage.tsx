@@ -11,12 +11,12 @@ export default function ShopHome() {
         <nav className="nav-links">
           <a href="#">Location</a>
           <a href="#">Favourites</a>
-          <a href="#">Organizations</a>
+          <a href="#">Age-groups</a>
         </nav>
 
         <div className="nav-actions">
-          <span>🛒</span>
-          <span>🔔</span>
+          <span>➕</span>
+          <span>🧑</span>
           <div className="avatar"></div>
         </div>
       </header>
@@ -27,15 +27,18 @@ export default function ShopHome() {
         <div className="hero-content">
           <h1>Are you ready for your next adventure?</h1>
           <p>Discover playgrounds for all age groups.</p>
+          <div className="hero-actions">
           <button className="primary-btn">Playground finder</button>
+          <button className="primary-btn">Search by age</button>
+        </div>
         </div>
       </section>
 
       {/* CONTENT SECTION */}
       <section className="section">
-        <h2>Kategorien</h2>
+        <h2>Categories</h2>
         <div className="grid">
-          {["Babys", "Lernspielzeug", "Bauklötze", "Outdoor"].map((cat) => (
+          {["Tunnels", "Sandboxes", "Swings", "Slides"].map((cat) => (
             <div className="tile" key={cat}>
               <div className="image-placeholder"></div>
               <span>{cat}</span>
@@ -45,7 +48,7 @@ export default function ShopHome() {
       </section>
 
       <footer className="footer">
-        © 2026 KidsPlay
+        © 2026 KidsPlaygrounds
       </footer>
     </div>
   );
