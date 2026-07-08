@@ -1,90 +1,112 @@
-# This is the frontend to my playground app
+# This is the frontend for my playground app
 
 # Idea
 
-I would like to create a playground app that lists playgrounds in helsinki. You can view them on a map or in a list.
-All features on the playground should be listed.
-Future enhancements: a 3D model of the playground.
+I would like to create a playground app that lists playgrounds in Helsinki. Users should be able to view them either on a map or in a list.
+
+All features available at each playground should be listed.
+
+Future enhancements include a 3D model of each playground.
+
 It should be possible to upload images.
-Users should be able to move around without logging in and view the playgrounds at their leisure.
-Users should be able to submit ratings
-there should be an age rating for the respective play equipment or the entire playground
-seating, sun protection and rain protection should also be included.
-the playgrounds should be integrated into a database
-the design should/can correspond to that of the city of helsinke so that they can easily implement it in their own pages later.
-is the design publicly available?
 
-## 1. Wahl der Technologie
+Users should be able to browse and explore playgrounds without logging in.
 
-Da es sich um eine moderne Web-App handelt, empfehle ich React mit TypeScript. Warum?
+Users should be able to submit ratings.
 
-✅ React:
+There should be an age recommendation for individual play equipment as well as for the entire playground.
 
-    Weit verbreitet und einfach zu warten
-    Gute Performance für Karten & interaktive Elemente
-    Leicht mit bestehenden Stadt-Webseiten zu integrieren
+Information about seating, sun protection, and rain shelters should also be included.
 
-✅ TypeScript:
+The playgrounds should be stored in a database.
 
-    Statische Typisierung → weniger Fehler
-    Bessere Wartbarkeit, besonders für große Projekte
+The design should align with the City of Helsinki's design so that it can easily be integrated into their official pages later.
 
-## 2. Frameworks & Bibliotheken
+Is the design system publicly available?
 
-    React mit TailwindCSS für ein modernes UI
-    Nest.js
-    Supabase und PostGis
+## 1. Technology Choice
 
-## 3. Datenbank & Backend
+Since this is a modern web application, I recommend using React with TypeScript. Why?
 
-sollte können:
+### React
 
-- API-Endpunkte bereitstellen (z. B. /api/playgrounds, /api/reviews)
-- Authentifizierung (User / Token-Handling)
-- Validierung & Autorisierung (z. B. „nur Ersteller darf löschen“)
-- Bilder-Upload & Storage
-- Kommunikation mit PostgreSQL
-- Geodaten-Abfragen (PostGIS)
+- Widely adopted and easy to maintain
+- Excellent performance for maps and interactive components
+- Easy to integrate with existing city websites
 
-  PostgreSQL mit PostGIS
-  Perfekt für Standort-Daten & Geodaten
-  NestJS + Prisma + Supabase (PostgreSQL)
+### TypeScript
 
-## 4. Features & Umsetzung
+- Static typing leads to fewer errors
+- Better maintainability, especially for larger projects
 
-    Kartenansicht + Liste der Spielplätze
-        Leaflet.js oder Mapbox
-        Spielplätze aus Datenbank abrufen & anzeigen
+## 2. Frameworks & Libraries
 
-    Detaillierte Spielplatzinfos (Spielgeräte, Altersempfehlung, Sitzplätze, Wetter-Schutz, Bewertungen)
-        Datenbankstruktur mit Spielplätze, Features, Bewertungen
-        Bewertungssystem (Sterne + Text)
+- React with Tailwind CSS for a modern UI
+- NestJS
+- Supabase and PostGIS
 
-    Bilder-Upload für Spielplätze
-        Cloudinary oder Firebase Storage für Bildspeicherung
+## 3. Database & Backend
 
-    Bewertungen & Alterseinschätzung
-        Nutzer ohne Anmeldung → LocalStorage oder IP-basierte Einschränkung
-        Später evtl. OAuth (Google Login) für Benutzerkonten
+The backend should provide:
 
-    Design im Stil der Stadt Helsinki
-        Helsinki hat ein öffentliches Design-System:
-        👉 Helsinki City Design System
-        Farben, UI-Elemente und Komponenten können direkt übernommen werden
+- API endpoints (e.g. `/api/playgrounds` and `/api/reviews`)
+- Authentication (user and token handling)
+- Validation and authorization (e.g. "only the creator can delete")
+- Image uploads and storage
+- Communication with PostgreSQL
+- Geospatial queries using PostGIS
 
-        https://hds.hel.fi/
+Recommended stack:
 
-## 5. Zukunft: 3D Modell des Spielplatzes
+- PostgreSQL with PostGIS
+- Ideal for location-based and geospatial data
+- NestJS + Prisma + Supabase (PostgreSQL)
 
-    Three.js für Web-3D-Modelle
-    Cesium.js (falls du es mit echten Geo-Daten verbinden willst)
-    Alternative: Photogrammetrie mit OpenDroneMap
+## 4. Features & Implementation
 
-## 6. Fazit & Empfehlung
+### Map View + Playground List
 
-    Frontend: React mit Next.js + TypeScript
-    Backend: Node.js + Express oder Supabase
-    Datenbank: PostgreSQL mit PostGIS
-    Karte: Leaflet.js oder Mapbox
-    Design: Helsinki Design System
-    Hosting: Vercel (Frontend) + Supabase oder Railway (Backend)
+- Leaflet.js or Mapbox
+- Retrieve playgrounds from the database and display them on the map
+
+### Detailed Playground Information
+
+- Play equipment
+- Recommended age groups
+- Seating
+- Weather protection
+- User ratings
+- Database structure for playgrounds, features, and reviews
+- Rating system (stars + text)
+
+### Image Uploads
+
+- Cloudinary or Firebase Storage for image storage
+
+### Ratings & Age Recommendations
+
+- Anonymous users: LocalStorage or IP-based restrictions
+- Later: OAuth (Google Login) for user accounts
+
+### City of Helsinki Design
+
+The City of Helsinki provides a public design system.
+
+- Colors, UI elements, and components can be reused directly.
+
+https://hds.hel.fi/
+
+## 5. Future: 3D Playground Models
+
+- Three.js for web-based 3D models
+- CesiumJS (if you want to integrate real geospatial data)
+- Alternative: Photogrammetry with OpenDroneMap
+
+## 6. Conclusion & Recommendation
+
+- **Frontend:** React with Next.js + TypeScript
+- **Backend:** Node.js + Express or Supabase
+- **Database:** PostgreSQL with PostGIS
+- **Maps:** Leaflet.js or Mapbox
+- **Design:** Helsinki Design System
+- **Hosting:** Vercel (Frontend) + Supabase or Railway (Backend)
